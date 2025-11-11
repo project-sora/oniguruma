@@ -25,7 +25,7 @@
  * SUCH DAMAGE.
  */
 
-#define GRAPHEME_BREAK_PROPERTY_VERSION  160000
+#define GRAPHEME_BREAK_PROPERTY_VERSION  170000
 
 /*
 CR
@@ -43,7 +43,7 @@ V
 ZWJ
 */
 
-static int EGCB_RANGE_NUM = 1376;
+static int EGCB_RANGE_NUM = 1386;
 static EGCB_RANGE_TYPE EGCB_RANGES[] = {
  {0x000000, 0x000009, EGCB_Control },
  {0x00000a, 0x00000a, EGCB_LF },
@@ -271,7 +271,8 @@ static EGCB_RANGE_TYPE EGCB_RANGES[] = {
  {0x001a6d, 0x001a72, EGCB_SpacingMark },
  {0x001a73, 0x001a7c, EGCB_Extend },
  {0x001a7f, 0x001a7f, EGCB_Extend },
- {0x001ab0, 0x001ace, EGCB_Extend },
+ {0x001ab0, 0x001add, EGCB_Extend },
+ {0x001ae0, 0x001aeb, EGCB_Extend },
  {0x001b00, 0x001b03, EGCB_Extend },
  {0x001b04, 0x001b04, EGCB_SpacingMark },
  {0x001b34, 0x001b3d, EGCB_Extend },
@@ -1191,7 +1192,7 @@ static EGCB_RANGE_TYPE EGCB_RANGES[] = {
  {0x010d24, 0x010d27, EGCB_Extend },
  {0x010d69, 0x010d6d, EGCB_Extend },
  {0x010eab, 0x010eac, EGCB_Extend },
- {0x010efc, 0x010eff, EGCB_Extend },
+ {0x010efa, 0x010eff, EGCB_Extend },
  {0x010f46, 0x010f50, EGCB_Extend },
  {0x010f82, 0x010f85, EGCB_Extend },
  {0x011000, 0x011000, EGCB_SpacingMark },
@@ -1325,7 +1326,6 @@ static EGCB_RANGE_TYPE EGCB_RANGES[] = {
  {0x011a01, 0x011a0a, EGCB_Extend },
  {0x011a33, 0x011a38, EGCB_Extend },
  {0x011a39, 0x011a39, EGCB_SpacingMark },
- {0x011a3a, 0x011a3a, EGCB_Prepend },
  {0x011a3b, 0x011a3e, EGCB_Extend },
  {0x011a47, 0x011a47, EGCB_Extend },
  {0x011a51, 0x011a56, EGCB_Extend },
@@ -1335,6 +1335,12 @@ static EGCB_RANGE_TYPE EGCB_RANGES[] = {
  {0x011a8a, 0x011a96, EGCB_Extend },
  {0x011a97, 0x011a97, EGCB_SpacingMark },
  {0x011a98, 0x011a99, EGCB_Extend },
+ {0x011b60, 0x011b60, EGCB_Extend },
+ {0x011b61, 0x011b61, EGCB_SpacingMark },
+ {0x011b62, 0x011b64, EGCB_Extend },
+ {0x011b65, 0x011b65, EGCB_SpacingMark },
+ {0x011b66, 0x011b66, EGCB_Extend },
+ {0x011b67, 0x011b67, EGCB_SpacingMark },
  {0x011c2f, 0x011c2f, EGCB_SpacingMark },
  {0x011c30, 0x011c36, EGCB_Extend },
  {0x011c38, 0x011c3d, EGCB_Extend },
@@ -1412,6 +1418,10 @@ static EGCB_RANGE_TYPE EGCB_RANGES[] = {
  {0x01e2ec, 0x01e2ef, EGCB_Extend },
  {0x01e4ec, 0x01e4ef, EGCB_Extend },
  {0x01e5ee, 0x01e5ef, EGCB_Extend },
+ {0x01e6e3, 0x01e6e3, EGCB_Extend },
+ {0x01e6e6, 0x01e6e6, EGCB_Extend },
+ {0x01e6ee, 0x01e6ef, EGCB_Extend },
+ {0x01e6f5, 0x01e6f5, EGCB_Extend },
  {0x01e8d0, 0x01e8d6, EGCB_Extend },
  {0x01e944, 0x01e94a, EGCB_Extend },
  {0x01f1e6, 0x01f1ff, EGCB_Regional_Indicator },

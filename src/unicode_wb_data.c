@@ -25,7 +25,7 @@
  * SUCH DAMAGE.
  */
 
-#define WORD_BREAK_PROPERTY_VERSION  160000
+#define WORD_BREAK_PROPERTY_VERSION  170000
 
 /*
 ALetter
@@ -48,7 +48,7 @@ WSegSpace
 ZWJ
 */
 
-static int WB_RANGE_NUM = 1085;
+static int WB_RANGE_NUM = 1100;
 static WB_RANGE_TYPE WB_RANGES[] = {
  {0x00000a, 0x00000a, WB_LF },
  {0x00000b, 0x00000c, WB_Newline },
@@ -69,6 +69,7 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x0000ad, 0x0000ad, WB_Format },
  {0x0000b5, 0x0000b5, WB_ALetter },
  {0x0000b7, 0x0000b7, WB_MidLetter },
+ {0x0000b8, 0x0000b8, WB_ALetter },
  {0x0000ba, 0x0000ba, WB_ALetter },
  {0x0000c0, 0x0000d6, WB_ALetter },
  {0x0000d8, 0x0000f6, WB_ALetter },
@@ -154,7 +155,7 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x000859, 0x00085b, WB_Extend },
  {0x000860, 0x00086a, WB_ALetter },
  {0x000870, 0x000887, WB_ALetter },
- {0x000889, 0x00088e, WB_ALetter },
+ {0x000889, 0x00088f, WB_ALetter },
  {0x000890, 0x000891, WB_Numeric },
  {0x000897, 0x00089f, WB_Extend },
  {0x0008a0, 0x0008c9, WB_ALetter },
@@ -276,7 +277,7 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x000c4a, 0x000c4d, WB_Extend },
  {0x000c55, 0x000c56, WB_Extend },
  {0x000c58, 0x000c5a, WB_ALetter },
- {0x000c5d, 0x000c5d, WB_ALetter },
+ {0x000c5c, 0x000c5d, WB_ALetter },
  {0x000c60, 0x000c61, WB_ALetter },
  {0x000c62, 0x000c63, WB_Extend },
  {0x000c66, 0x000c6f, WB_Numeric },
@@ -293,7 +294,7 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x000cc6, 0x000cc8, WB_Extend },
  {0x000cca, 0x000ccd, WB_Extend },
  {0x000cd5, 0x000cd6, WB_Extend },
- {0x000cdd, 0x000cde, WB_ALetter },
+ {0x000cdc, 0x000cde, WB_ALetter },
  {0x000ce0, 0x000ce1, WB_ALetter },
  {0x000ce2, 0x000ce3, WB_Extend },
  {0x000ce6, 0x000cef, WB_Numeric },
@@ -426,7 +427,8 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x001a7f, 0x001a7f, WB_Extend },
  {0x001a80, 0x001a89, WB_Numeric },
  {0x001a90, 0x001a99, WB_Numeric },
- {0x001ab0, 0x001ace, WB_Extend },
+ {0x001ab0, 0x001add, WB_Extend },
+ {0x001ae0, 0x001aeb, WB_Extend },
  {0x001b00, 0x001b04, WB_Extend },
  {0x001b05, 0x001b33, WB_ALetter },
  {0x001b34, 0x001b44, WB_Extend },
@@ -564,11 +566,8 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x00a69e, 0x00a69f, WB_Extend },
  {0x00a6a0, 0x00a6ef, WB_ALetter },
  {0x00a6f0, 0x00a6f1, WB_Extend },
- {0x00a708, 0x00a7cd, WB_ALetter },
- {0x00a7d0, 0x00a7d1, WB_ALetter },
- {0x00a7d3, 0x00a7d3, WB_ALetter },
- {0x00a7d5, 0x00a7dc, WB_ALetter },
- {0x00a7f2, 0x00a801, WB_ALetter },
+ {0x00a708, 0x00a7dc, WB_ALetter },
+ {0x00a7f1, 0x00a801, WB_ALetter },
  {0x00a802, 0x00a802, WB_Extend },
  {0x00a803, 0x00a805, WB_ALetter },
  {0x00a806, 0x00a806, WB_Extend },
@@ -728,6 +727,7 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x0108f4, 0x0108f5, WB_ALetter },
  {0x010900, 0x010915, WB_ALetter },
  {0x010920, 0x010939, WB_ALetter },
+ {0x010940, 0x010959, WB_ALetter },
  {0x010980, 0x0109b7, WB_ALetter },
  {0x0109be, 0x0109bf, WB_ALetter },
  {0x010a00, 0x010a00, WB_ALetter },
@@ -761,8 +761,8 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x010e80, 0x010ea9, WB_ALetter },
  {0x010eab, 0x010eac, WB_Extend },
  {0x010eb0, 0x010eb1, WB_ALetter },
- {0x010ec2, 0x010ec4, WB_ALetter },
- {0x010efc, 0x010eff, WB_Extend },
+ {0x010ec2, 0x010ec7, WB_ALetter },
+ {0x010efa, 0x010eff, WB_Extend },
  {0x010f00, 0x010f1c, WB_ALetter },
  {0x010f27, 0x010f27, WB_ALetter },
  {0x010f30, 0x010f45, WB_ALetter },
@@ -916,6 +916,7 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x011a8a, 0x011a99, WB_Extend },
  {0x011a9d, 0x011a9d, WB_ALetter },
  {0x011ab0, 0x011af8, WB_ALetter },
+ {0x011b60, 0x011b67, WB_Extend },
  {0x011bc0, 0x011be0, WB_ALetter },
  {0x011bf0, 0x011bf9, WB_Numeric },
  {0x011c00, 0x011c08, WB_ALetter },
@@ -945,6 +946,8 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x011d93, 0x011d97, WB_Extend },
  {0x011d98, 0x011d98, WB_ALetter },
  {0x011da0, 0x011da9, WB_Numeric },
+ {0x011db0, 0x011ddb, WB_ALetter },
+ {0x011de0, 0x011de9, WB_Numeric },
  {0x011ee0, 0x011ef2, WB_ALetter },
  {0x011ef3, 0x011ef6, WB_Extend },
  {0x011f00, 0x011f01, WB_Extend },
@@ -987,6 +990,8 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x016d40, 0x016d6c, WB_ALetter },
  {0x016d70, 0x016d79, WB_Numeric },
  {0x016e40, 0x016e7f, WB_ALetter },
+ {0x016ea0, 0x016eb8, WB_ALetter },
+ {0x016ebb, 0x016ed3, WB_ALetter },
  {0x016f00, 0x016f4a, WB_ALetter },
  {0x016f4f, 0x016f4f, WB_Extend },
  {0x016f50, 0x016f50, WB_ALetter },
@@ -1083,6 +1088,16 @@ static WB_RANGE_TYPE WB_RANGES[] = {
  {0x01e5ee, 0x01e5ef, WB_Extend },
  {0x01e5f0, 0x01e5f0, WB_ALetter },
  {0x01e5f1, 0x01e5fa, WB_Numeric },
+ {0x01e6c0, 0x01e6de, WB_ALetter },
+ {0x01e6e0, 0x01e6e2, WB_ALetter },
+ {0x01e6e3, 0x01e6e3, WB_Extend },
+ {0x01e6e4, 0x01e6e5, WB_ALetter },
+ {0x01e6e6, 0x01e6e6, WB_Extend },
+ {0x01e6e7, 0x01e6ed, WB_ALetter },
+ {0x01e6ee, 0x01e6ef, WB_Extend },
+ {0x01e6f0, 0x01e6f4, WB_ALetter },
+ {0x01e6f5, 0x01e6f5, WB_Extend },
+ {0x01e6fe, 0x01e6ff, WB_ALetter },
  {0x01e7e0, 0x01e7e6, WB_ALetter },
  {0x01e7e8, 0x01e7eb, WB_ALetter },
  {0x01e7ed, 0x01e7ee, WB_ALetter },
