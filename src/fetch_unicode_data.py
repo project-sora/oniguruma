@@ -17,9 +17,12 @@ required_data = [
 if len(sys.argv) < 2:
     print('Fetching the latest version name of Unicode')
     latest_url = requests.get('https://www.unicode.org/versions/latest', allow_redirects=False).headers.get('Location', '')
-    leading_text = 'https://www.unicode.org/versions/Unicode'
-    if latest_url.startswith(leading_text):
-        version = latest_url[len(leading_text):]
+    https_leading_text = 'https://www.unicode.org/versions/Unicode'
+    http_leading_text = 'http://www.unicode.org/versions/Unicode'
+    if latest_url.startswith(https_leading_text):
+        version = latest_url[len(https_leading_text):]
+    elif latest_url.startswith(http_leading_text):
+        version =  latest_url[len(http_leading_text):]
     else:
         print('Failed detect the latest version name of Unicode. Please try to specify a version.')
         exit(1)
