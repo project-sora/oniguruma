@@ -1,4 +1,4 @@
-Unicode Properties (Unicode Version: 16.0.0,  Emoji: 16.0)
+Unicode Properties (Unicode Version: 18.0.0,  Emoji: 18.0)
 
 ASCII_Hex_Digit
 Adlam
@@ -15,6 +15,7 @@ Bamum
 Bassa_Vah
 Batak
 Bengali
+Beria_Erfe
 Bhaiksuki
 Bidi_Control
 Bopomofo
@@ -105,6 +106,7 @@ Inscriptional_Pahlavi
 Inscriptional_Parthian
 Javanese
 Join_Control
+Jurchen
 Kaithi
 Kannada
 Katakana
@@ -209,6 +211,7 @@ Phoenician
 Pi
 Po
 Prepended_Concatenation_Mark
+Proto_Cuneiform
 Ps
 Psalter_Pahlavi
 Quotation_Mark
@@ -220,10 +223,12 @@ S
 Samaritan
 Saurashtra
 Sc
+Seal
 Sentence_Terminal
 Sharada
 Shavian
 Siddham
+Sidetic
 SignWriting
 Sinhala
 Sk
@@ -242,6 +247,7 @@ Tagbanwa
 Tai_Le
 Tai_Tham
 Tai_Viet
+Tai_Yo
 Takri
 Tamil
 Tangsa
@@ -254,6 +260,7 @@ Tibetan
 Tifinagh
 Tirhuta
 Todhri
+Tolong_Siki
 Toto
 Tulu_Tigalari
 Ugaritic
@@ -287,6 +294,7 @@ Bamu
 Bass
 Batk
 Beng
+Berf
 Bhks
 Bidi_C
 Bopo
@@ -373,6 +381,7 @@ Initial_Punctuation
 Ital
 Java
 Join_C
+Jurc
 Kali
 Kana
 Khar
@@ -453,6 +462,7 @@ Pat_Syn
 Pat_WS
 Pauc
 PCM
+Pcun
 Perm
 Phag
 Phli
@@ -479,6 +489,7 @@ Sgnw
 Shaw
 Shrd
 Sidd
+Sidt
 Sind
 Sinh
 Sogd
@@ -501,6 +512,7 @@ Talu
 Taml
 Tang
 Tavt
+Tayo
 Telu
 Term
 Tfng
@@ -511,6 +523,7 @@ Tirh
 Titlecase_Letter
 Tnsa
 Todr
+Tols
 Tutg
 Ugar
 UIdeo
@@ -727,6 +740,7 @@ In_Nabataean
 In_Hatran
 In_Phoenician
 In_Lydian
+In_Sidetic
 In_Meroitic_Hieroglyphs
 In_Meroitic_Cursive
 In_Kharoshthi
@@ -778,11 +792,14 @@ In_Soyombo
 In_Unified_Canadian_Aboriginal_Syllabics_Extended_A
 In_Pau_Cin_Hau
 In_Devanagari_Extended_A
+In_Sharada_Supplement
 In_Sunuwar
 In_Bhaiksuki
 In_Marchen
 In_Masaram_Gondi
 In_Gunjala_Gondi
+In_Tolong_Siki
+In_Bengali_Supplement
 In_Makasar
 In_Kawi
 In_Lisu_Supplement
@@ -790,6 +807,7 @@ In_Tamil_Supplement
 In_Cuneiform
 In_Cuneiform_Numbers_and_Punctuation
 In_Early_Dynastic_Cuneiform
+In_Archaic_Cuneiform_Numerals
 In_Cypro_Minoan
 In_Egyptian_Hieroglyphs
 In_Egyptian_Hieroglyph_Format_Controls
@@ -803,12 +821,16 @@ In_Bassa_Vah
 In_Pahawh_Hmong
 In_Kirat_Rai
 In_Medefaidrin
+In_Beria_Erfe
 In_Miao
 In_Ideographic_Symbols_and_Punctuation
 In_Tangut
 In_Tangut_Components
 In_Khitan_Small_Script
 In_Tangut_Supplement
+In_Tangut_Components_Supplement
+In_Jurchen
+In_Jurchen_Radicals
 In_Kana_Extended_B
 In_Kana_Supplement
 In_Kana_Extended_A
@@ -817,16 +839,19 @@ In_Nushu
 In_Duployan
 In_Shorthand_Format_Controls
 In_Symbols_for_Legacy_Computing_Supplement
+In_Miscellaneous_Symbols_Supplement
 In_Znamenny_Musical_Notation
 In_Byzantine_Musical_Symbols
 In_Musical_Symbols
 In_Ancient_Greek_Musical_Notation
+In_Musical_Symbols_Supplement
 In_Kaktovik_Numerals
 In_Mayan_Numerals
 In_Tai_Xuan_Jing_Symbols
 In_Counting_Rod_Numerals
 In_Mathematical_Alphanumeric_Symbols
 In_Sutton_SignWriting
+In_Miscellaneous_Symbols_and_Arrows_Extended
 In_Latin_Extended_G
 In_Glagolitic_Supplement
 In_Cyrillic_Extended_D
@@ -835,6 +860,7 @@ In_Toto
 In_Wancho
 In_Nag_Mundari
 In_Ol_Onal
+In_Tai_Yo
 In_Ethiopic_Extended_B
 In_Mende_Kikakui
 In_Adlam
@@ -866,6 +892,8 @@ In_CJK_Unified_Ideographs_Extension_I
 In_CJK_Compatibility_Ideographs_Supplement
 In_CJK_Unified_Ideographs_Extension_G
 In_CJK_Unified_Ideographs_Extension_H
+In_CJK_Unified_Ideographs_Extension_J
+In_Seal
 In_Tags
 In_Variation_Selectors_Supplement
 In_Supplementary_Private_Use_Area_A
